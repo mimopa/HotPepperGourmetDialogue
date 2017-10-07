@@ -13,7 +13,7 @@ class HotPepperGourmetAPI(object):
 
     def __init__(self, api_key=None):
         #self.__api_key = os.environ.get('f25a156b7a201bc6', api_key)
-        self.__api_key = 'f25a156b7a201bc6'
+        self.__api_key = 'API KEY'
 
     def __search(self, api_type, **kwargs):
         params = {'key': self.__api_key, 'format': 'json'}
