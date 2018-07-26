@@ -12,9 +12,8 @@ class HotPepperGourmetAPI(object):
     BASE_URL = 'http://webservice.recruit.co.jp/hotpepper/{0}/v1/'
 
     def __init__(self, api_key=None):
-        #self.__api_key = os.environ.get('f25a156b7a201bc6', api_key)
-        self.__api_key = 'API KEY'
-
+        self.__api_key = os.environ.get('HOTPEPPER_API_KEY', api_key)
+ 
     def __search(self, api_type, **kwargs):
         params = {'key': self.__api_key, 'format': 'json'}
         params.update(kwargs)

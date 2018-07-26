@@ -10,7 +10,7 @@ def create_or_read(user_id):
 def save_bot(bot, user_id):
     bots[user_id] = bot
 
-@listen_to('(.*)')
+# @listen_to('(.*)')
 @respond_to('(.*)')
 def food(message, something):
     print(message)

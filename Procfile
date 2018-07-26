@@ -1,0 +1,1 @@
+pbot: python ./application/skack_bot.py
